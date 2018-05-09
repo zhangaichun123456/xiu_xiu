@@ -1,0 +1,12 @@
+{
+    "code": 0,
+    "msg": "success",
+    "data": {
+       "userId": 0,
+        "nickName": "",
+        "telno": "",
+        "age": 0,
+        "sex": 0, 
+        "avatarUrl":"路径"
+    }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>我邀请您加入</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" href="css/sm.min.css">
+  <link rel="stylesheet" href="css/list.css">
+  <style>
+  .page{
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .head{
+  	height: 2.5rem;
+    background: blue;
+  }
+  .head img{
+    width: 2rem;
+  	height: 2rem;
+  }
+   .head img, .head p{
+    display: inline-block;
+    vertical-align: middle;
+   }
+   .peoinfo{
+    margin-top: 2.5rem;
+    text-align: center;
+   }
+   .peoinfo img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 1rem 0;
+   }
+   .peoinfo p{
+    line-height:1.5rem;
+   }
+   .Vercode{
+    position: absolute;
+    top: .3rem;
+    right: 2rem;
+    width: 3rem;
+    height: 1.5rem;
+   }
+   .codeinput{
+    width: 5rem !important;
+   }
+   .list-block{
+    margin: 1rem 0;
+   }
+  </style>
+</head>
+<body>
+<div class="page">
+  <div class="head">
+    <img src="image/banner2.jpg" alt="">
+    <p>咻咻</p>
+  </div>
+  <div class="content">
+    <div class="peoinfo">
+      <img src="image/banner2.jpg" alt="">
+      <p><span>XXX</span>邀请您加入</p>
+      <p>XX公司</p>
+    </div>
+    <div class="list-block">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">手机号码</div>
+                <div class="item-input">
+                  <input type="text" placeholder="请输入手机号码" class="telno">
+                </div>
+              </div>
+            </div>
+          </li>
+           <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">真实姓名</div>
+                <div class="item-input">
+                  <input type="text" placeholder="请输入真实姓名" class="realname">
+                </div>
+              </div>
+            </div>
+          </li>
+           <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">验证码</div>
+                <div class="item-input">
+                  <input type="text" placeholder="验证码" class="codeinput">
+                  <img src="image/banner2.jpg" alt="看不清，换一张" class="Vercode">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="align-top">
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">申请理由</div>
+                <div class="item-input">
+                  <textarea placeholder="请输入申请理由（选填）" class="Reason"></textarea>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+    </div>
+    <p class="subbtn"><a href="#" class="button button-big button-fill">加入团队</a></p>
+  </div>
+</div>
+
+<script src="js/zepto.js"></script>
+<script src="js/sm.min.js"></script>
+<script>
+// 一开始就加载验证码
+// (function(){
+//   $.ajax({
+//     type:"GET",
+//     url:'',
+//     success:function(res){
+//       // 把图片渲染到img里面
+//     }
+//   })
+// })();
+
+
+$(".subbtn").click(function(){
+  var telno=$(".telno").val();
+  var realname=$(".realname").val();
+  var codeinput=$(".codeinput").val();
+  var Reason=$(".Reason").val();
+  if(telno==''){
+    $.toast('手机号不能为空', 2000);
+  }else if(!/^1[34578]\d{9}$/.test(telno)){
+    $.toast('手机号填写不正确', 2000);
+  }else if(realname==""){
+    $.toast('姓名不能为空', 2000);
+  }else if(codeinput==''){
+    $.toast('验证码不能为空', 2000);
+  }else{
+    $.ajax({
+      type:"GET",
+      url:'',
+      data:{
+        telno:telno,
+        realname:realname,
+        codeinput:codeinput,
+        Reason:Reason
+      },
+      success:function(res){
+
+      }
+    })
+  }
+})
+
+// 点击刷新验证码
+$(".Vercode").click(function(){
+
+})
+</script>
+</body>
+</html>

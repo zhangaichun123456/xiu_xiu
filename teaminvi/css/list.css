@@ -1,0 +1,263 @@
+@charset "utf-8";
+.head{
+	height:10rem;
+	color: #fff;
+}
+.head1{
+	padding: .8rem 0 0 .5rem;
+    height: 6.5rem;
+    background: #2f98e8;
+    position: relative;
+}
+.head2{
+	height: 2.5rem;
+	padding-left: .5rem;
+	line-height: 2.5rem;
+	background: #fff;
+}
+p{
+	margin: 0;
+}
+.Cash_available{
+	font-size: .7rem;
+	text-align: left;
+	padding-bottom: .5rem;
+}
+.money{
+	text-align: center;
+	top: -.7rem;
+}
+.money span{
+	font-size: 1.5rem;
+}
+.head2 p{
+	font-size: .8rem;
+	position: relative;
+	text-align: center;
+	color: #525252;
+}
+.head2 .moneyxiao{
+	font-size: .7rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: #858484;
+}
+.head2 p i{
+	 font-style:normal;
+}
+.con1{
+	margin: 11rem 0 1rem 0;
+	font-size: .5rem;
+}
+.con1 .list-block {
+    margin: 0;
+}
+.card-content{
+	padding: .5rem .75rem;
+	position: relative;
+}
+.card-header{
+	font-size: .7rem;
+	background: #fff;
+}
+.con1 .list-block ul:before{
+	background-color: #fff;
+}
+.list-block{
+	font-size: .7rem !important;
+}
+.popup ::-webkit-input-placeholder { /* WebKit browsers */ 
+font-size:.7rem;
+} 
+.popup :-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+font-size:.7rem;
+} 
+.popup ::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+font-size:.7rem;
+} 
+.popup ::-ms-input-placeholder { /* Internet Explorer 10+ */ 
+font-size:.7rem;
+}
+.popup select{
+	font-size: .7rem;
+}
+.popup{
+	width: 15.6rem;
+	height: 17.4rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -8.7rem;
+	margin-left: -7.8rem;
+}
+.hide{
+	display: none;
+}
+.bar{
+	height:2.5rem;
+	z-index: 20;
+	background: #2f98e8;	
+}
+.bar .title{
+	color: #fff;
+	font-size: .8rem;
+}
+.goback{
+	display: block;
+	width: 100%;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	background: #2f98e8;
+}
+.backimg{
+	display: inline-block;
+	width: .7rem;
+	height: .7rem;
+	margin-top: .5rem ;
+	margin-left: .5rem;
+	vertical-align: middle;	
+}
+.goback p{
+	display: inline-block;
+	height: .75rem;
+	line-height: .75rem;
+	font-size: .75rem;
+	padding-left: .5rem;
+	margin-left: .5rem;
+	margin-top: .5rem;
+	color: #fff;
+	text-align: left;
+	border-left: 1px solid #fffffe;
+	vertical-align: middle;
+
+}
+.money .ljtx{
+	font-size: .7rem;
+	position: absolute;
+	bottom: .8rem;
+	right: .8rem;
+	padding: .2rem .5rem;
+	border:1px solid #fff;
+    border-radius: .8rem;
+}
+.head2 p .txjl{
+	display: inline-block;
+	line-height: 1.1rem;
+	padding: .2rem .5rem;
+    font-size: .7rem;
+    position: absolute;
+	top: 0rem;
+	margin-top: .5rem;
+	right: .8rem;
+	border:1px solid #2f98e8;
+	border-radius: .7rem;
+}
+.popup .list-block {
+	margin-top: 2.45rem;
+	margin-bottom: 0;
+	height: 12.5rem;
+}
+.popup .list-block li{
+	height: 2.5rem;
+}
+.popup .bottom_menu{
+	height: 2.4rem;
+	border-top: 1px solid #e7e7e7;
+	box-sizing: border-box;
+}
+.popup .bottom_menu ul,.popup .bottom_menu ul li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.popup .bottom_menu ul{
+	height: 2.4rem;
+	font-size: 0;
+}
+.popup .bottom_menu ul li{
+	height: 2.4rem;
+	line-height: 2.4rem;
+	display: inline-block;
+	width: 50%;
+	font-size: .75rem;
+	text-align: center;
+}
+.popup .bottom_menu ul li a{
+	display: block;
+	height: 2.4rem;
+	width: 100%;
+}
+.popup .bottom_menu ul li:first-child{
+	background: #2f98e8;	
+}
+.popup .bottom_menu ul li:first-child a{
+	color: #fff;
+}
+.popup .bottom_menu ul li:last-child{
+	background: #fff;
+}
+.popup .bottom_menu ul li:last-child a{
+	color: #525252;
+}
+.popup .last-tip{
+	height: 2.4rem;
+	line-height: 2.4rem;
+	text-align: center;
+	border-top: 1px solid #e7e7e7;
+	box-sizing: border-box;
+}
+.popup .last-tip a{
+	width: 100%;
+	height: 2.4rem;
+	color: #525252;
+	font-size: .75rem;
+}
+.popup-sure .list-block{
+	text-align: center;
+}
+.popup-sure .list-block img{
+	margin: 2.25rem 0;
+}
+.popup-sure .list-block p{
+	font-size: .7rem;
+}
+.tip{
+	padding-left:0.75rem;
+	color: #e53030;
+	font-size: .5rem;
+	margin-top: .5rem;
+}
+.popup-info input{
+	font-size: .7rem;
+}
+.emptytip{
+	text-align: center;
+}
+.emptytip img{
+	margin: 2.25rem 0;
+}
+.emptytip p{
+	font-size: .7rem;
+}
+.itemtitle span{
+	display: inline-block;
+	width: 4.5rem;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	position: relative;
+	top: .3rem;
+}
+.card-content .itemafter{
+	position: absolute;
+	right: .5rem;
+	top: .9rem;
+}
+.yuan{
+	position: relative;
+	right: 1rem;
+}
+.list-block input[type=text], .list-block input[type=password], .list-block input[type=email], .list-block input[type=tel], .list-block input[type=url], .list-block input[type=date], .list-block input[type=datetime-local], .list-block input[type=time], .list-block input[type=number], .list-block input[type=search], .list-block select, .list-block textarea {
+	font-size: .7rem;
+}
